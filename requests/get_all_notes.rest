@@ -1,0 +1,22 @@
+GET http://localhost:3001/api/persons/
+
+###
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Tace rHopper",
+  "number": "123456"
+}
+
+###
+DELETE http://localhost:3001/api/persons/2
+
+### PUT /api/persons/:id
+PUT http://localhost:3001/api/persons/674cec709c1ea7f43e9921bd
+Content-Type: application/json
+
+{
+    "name": "wetyu",
+    "number": "551-45787845"
+}
